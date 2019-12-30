@@ -30,7 +30,6 @@ let package = Package(
     .systemLibrary(name: "cmosquitto",
       pkgConfig: "libmosquitto",
       providers:[
-        .brew(["mosquitto"]),
         .apt(["libmosquitto-dev"])
       ]
     ),
